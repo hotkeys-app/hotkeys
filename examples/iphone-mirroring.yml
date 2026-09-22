@@ -1,0 +1,19 @@
+# iPhone Mirroring and the iOS Simulator, driven from the keyboard.
+#
+# openMenuItem clicks the real menu item by name, so it keeps working when Apple changes
+# the shortcut behind it. Needs a license.
+
+macros:
+    MIRROR: currentProcessEquals("iPhone Mirroring")
+
+hotkeys:
+    esc:
+        MIRROR: openMenuItem("iPhone Mirroring", "View", "Home Screen")
+    f2:
+        MIRROR: openMenuItem("iPhone Mirroring", "View", "App Switcher")
+    f3:
+        MIRROR: openMenuItem("iPhone Mirroring", "View", "Spotlight")
+
+    # the Simulator has its own home combination, this puts it on one key
+    ^h:
+        currentAppSimulatorIos(): sendKeys("shift-command-h")

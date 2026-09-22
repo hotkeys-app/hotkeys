@@ -1,0 +1,21 @@
+name: Config help
+description: You know what you want the key to do, not how to write it
+labels: [config]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What should the key do
+      description: Which key, in which app, and what should happen
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you tried
+      render: yaml
+  - type: input
+    id: app
+    attributes:
+      label: Bundle id or window title of the app
+      description: Bind displayActiveWindowInfo() to a key and press it in that app

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://www.hotkeys.io/quick-start.html
+    about: Every method, key name, context and permission, with examples
+  - name: Private support
+    url: https://www.hotkeys.io/contact.html
+    about: License, payment or anything you would rather not post in public

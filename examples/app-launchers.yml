@@ -1,0 +1,20 @@
+# One key, one app. The cheapest hotkey there is, and the one you press most.
+#
+# runApp brings the app to the front when it is already running and launches it when it is
+# not. It takes the name with or without .app. It needs a license, the open lines below do not.
+
+hotkeys:
+    _#l: runApp("Telegram")
+    _#p: runApp("WebStorm")
+    _#y: runApp("DataGrip")
+    _#2: runApp("Xcode")
+    _#semicolon: runApp("Discord")
+    ^!#a: runApp("Activity Monitor")
+    ^#o: runApp("System Settings")
+
+    # the shell does the same without a license
+    _#t: open -a Terminal
+    _#f: open -a "Google Chrome"
+
+    # a second window of an app that normally allows only one
+    ^!#t: open -na Terminal

@@ -1,0 +1,22 @@
+# Coming from Windows. The keys that are missing on macOS or sit somewhere else.
+# Needs a license, except the screencapture line.
+
+hotkeys:
+    # Option and Shift pressed together and released, no other key, switches the input
+    # source the way Alt and Shift do on Windows. Bind the line below first and press it
+    # to read the ids of your own layouts.
+    _!*: switchKeyboardLayout("com.apple.keylayout.US", "com.apple.keylayout.Russian")
+    ^!#l: displayAvailableKeyboardInputSources()
+
+    # f5 reloads the page, as in every browser on Windows
+    f5:
+        currentAppChrome(): openMenuItem("Google Chrome", "View", "Reload This Page")
+
+    # print screen grabs a region into the clipboard, ready for command v
+    printscreen: screencapture -i -c
+
+    # Home and End where a text cursor is expected, see terminal-keys.yml for the shell
+    home:
+        currentAppTerminal(): sendKeys("control-a")
+    end:
+        currentAppTerminal(): sendKeys("control-e")

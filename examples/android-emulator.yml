@@ -1,0 +1,28 @@
+# Hardware keys for the Android emulator and for devices mirrored with scrcpy.
+# Escape is Back, the key left of 1 is Home, f2 is Recents, the same keys for both.
+#
+# Needs a license. The emulator context reads the window title, which needs the Screen
+# Recording permission. adb -e talks to the emulator, adb -d to the usb device.
+
+macros:
+    ADB: ~/Android/android-sdk-macosx/platform-tools/adb
+    SCRCPY: currentProcessEquals("scrcpy")
+
+hotkeys:
+    esc:
+        currentWindowAndroidEmulator(): androidEmulatorBack()
+        SCRCPY: ADB -d shell input keyevent KEYCODE_BACK
+    grave:
+        currentWindowAndroidEmulator(): androidEmulatorHome()
+        SCRCPY: ADB -d shell input keyevent KEYCODE_HOME
+    f2:
+        currentWindowAndroidEmulator(): ADB -e shell input keyevent KEYCODE_APP_SWITCH
+        SCRCPY: ADB -d shell input keyevent KEYCODE_APP_SWITCH
+
+    # settings screens you open twenty times a day while debugging
+    _!o:
+        SCRCPY: ADB -d shell am start -a android.settings.SETTINGS
+    _!z:
+        SCRCPY: ADB -d shell am start -a android.settings.APPLICATION_DEVELOPMENT_SETTINGS
+    _!s:
+        SCRCPY: ADB -d shell input keyevent KEYCODE_NOTIFICATION

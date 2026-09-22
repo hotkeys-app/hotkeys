@@ -1,0 +1,21 @@
+name: Feature request
+description: A method, context or config syntax that is missing
+labels: [feature]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you are trying to do
+      description: The workflow, not the feature. There may be a way already
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: How you would like to write it
+      description: Invent the config syntax you would want to type
+      render: yaml
+  - type: input
+    id: workaround
+    attributes:
+      label: What you do today instead

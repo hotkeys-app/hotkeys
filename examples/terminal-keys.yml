@@ -1,0 +1,19 @@
+# Windows and Linux muscle memory inside Terminal. Home, End and the word jumps do what
+# they do everywhere else, by translating them into the readline keys the shell listens for.
+#
+# Needs a license (contexts). For iTerm2 swap currentAppTerminal() for
+# currentApp("com.googlecode.iterm2"), for Ghostty currentApp("com.mitchellh.ghostty").
+
+hotkeys:
+    home:
+        currentAppTerminal(): sendKeys("control-a")     # start of line
+    end:
+        currentAppTerminal(): sendKeys("control-e")     # end of line
+    ^left:
+        currentAppTerminal(): sendKeys("alt-b")         # one word back
+    ^right:
+        currentAppTerminal(): sendKeys("alt-f")         # one word forward
+    ^backspace:
+        currentAppTerminal(): sendKeys("control-w")     # delete the word behind the cursor
+    _!backspace:
+        currentAppTerminal(): sendKeys("control-shift-minus")   # undo

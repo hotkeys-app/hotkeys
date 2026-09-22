@@ -1,0 +1,28 @@
+# Start here. Everything in this file runs without a license, it is all shell commands,
+# AppleScript and the four free methods.
+#
+# Copy the lines under hotkeys: into your own config (menu bar icon, Edit Config), save,
+# then Reload Config. Modifiers are ^ ctrl, ! option, * shift, # command. A name starting
+# with # * or ! needs a leading underscore that Hotkeys strips, so _#k is command k.
+
+hotkeys:
+    # a dialog, to prove the setup works
+    _*f1: helloWorld()
+
+    # open the config in your editor, and re read it after an edit
+    f10: openConfig()
+    _#f10: reloadConfig()
+
+    # press this inside any app to learn its bundle id, process name and window title,
+    # the three things contexts match on
+    ^!#i: displayActiveWindowInfo()
+
+    # a string that is not a method call goes to your login shell, so PATH, brew,
+    # virtualenvs and your aliases are all there
+    _#d: open ~/Downloads
+    _#e: open ~/Desktop
+    f12: screencapture -i -c        # region screenshot straight to the clipboard
+
+    # AppleScript, one line, no quoting games
+    ^f4:
+        appleScript: display dialog "Hello" buttons {"OK"} default button "OK"

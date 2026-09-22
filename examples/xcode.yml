@@ -1,0 +1,27 @@
+# Xcode with the editing keys of every other editor, plus the project files you open all
+# day on single keys. Needs a license.
+
+macros:
+    XCODE: currentApp("com.apple.dt.Xcode")
+
+hotkeys:
+    _*forwarddelete:
+        XCODE: sendKeys("command-x")            # shift delete cuts, as on Windows
+    _*backspace:
+        XCODE: sendKeys("command-x")            # the same on a laptop keyboard
+    _*insert:
+        XCODE: sendKeys("command-v")            # shift insert pastes
+    ^!left:
+        XCODE: sendKeys("control-comma")        # previous issue
+    ^!right:
+        XCODE: sendKeys("control-dot")          # next issue
+    _#a:
+        XCODE: sendKeys("shift-command-o")      # open quickly
+
+    # jump straight into a file, no navigator, no fuzzy search. Change the path to yours.
+    _!#b:
+        XCODE:
+            appleScript: |
+                tell application "Xcode"
+                    open "/Users/you/Projects/App/Podfile"
+                end tell

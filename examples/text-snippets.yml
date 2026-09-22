@@ -1,0 +1,18 @@
+# Type the things you type all day. Nothing here needs a license, it is all shell.
+#
+# The keystroke calls go through System Events, which uses the Accessibility permission
+# Hotkeys already has.
+
+hotkeys:
+    # the date as 20260922, typed wherever the cursor is
+    _#7: osascript -e 'tell application "System Events" to keystroke (do shell script "date +%Y%m%d")'
+
+    # date and time, 20260922171530, the format that sorts itself in file names
+    _#8: osascript -e 'tell application "System Events" to keystroke (do shell script "date +%Y%m%d%H%M%S")'
+
+    # clean up whatever is in the clipboard before pasting it
+    _#u: pbpaste | tr 'A-Z' 'a-z' | pbcopy
+
+    # screenshots, one to the clipboard and one to a dated file
+    f12: screencapture -i -c
+    _#f12: screencapture -i ~/Desktop/shot-$(date +%Y%m%d%H%M%S).png

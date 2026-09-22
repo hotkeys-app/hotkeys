@@ -1,0 +1,22 @@
+# JetBrains IDEs. Launchers, and the pattern for firing an IDE action from a single key.
+# Needs a license for runApp, the AppleScript block works without one.
+
+hotkeys:
+    _#3: runApp("AppCode")
+    _#f3: runApp("GoLand")
+    _#p: runApp("WebStorm")
+    _#w: runApp("PyCharm CE")
+    _#esc: runApp("Android Studio")      # back to the last window of the last project
+
+    # When the IDE may not be in front, activate it first and then press the combination
+    # inside it. key code 45 is n, so this sends option n to IntelliJ. If the IDE is
+    # already in front, sendKeys("alt-n") alone is enough.
+    f1:
+        appleScript: |
+            set appName to "IntelliJ IDEA"
+            tell application appName to activate
+            tell application "System Events"
+                tell process appName
+                    key code 45 using {option down}
+                end tell
+            end tell

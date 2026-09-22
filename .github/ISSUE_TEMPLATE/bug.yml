@@ -1,0 +1,46 @@
+name: Bug report
+description: A hotkey does not fire, fires twice, or does the wrong thing
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: What you pressed, what happened, what you expected instead
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: The config lines involved
+      description: The hotkey and its action, plus any macros they use
+      render: yaml
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Hotkeys version
+      description: The version shown in the menu bar menu
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+    validations:
+      required: true
+  - type: checkboxes
+    id: permissions
+    attributes:
+      label: Permissions granted
+      options:
+        - label: Accessibility
+        - label: Screen Recording (needed for window title contexts)
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Already checked
+      options:
+        - label: No other app owns the same combination (System Settings, Keyboard, Keyboard Shortcuts)
+        - label: The config was reloaded after the edit
