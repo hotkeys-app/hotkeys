@@ -1,7 +1,8 @@
 # Hotkeys
 
 True hotkeys for macOS. One plain text file binds any key to any action: a shell command, an
-AppleScript, a menu item, another key combination, and only in the app or window you choose.
+AppleScript, a menu item, another key combination, everywhere or only in the app or window you
+choose.
 
 This repository is the public side of the app: config examples you can paste into your own file,
 the issue tracker, and the place to send configs of your own. The app itself is closed source and
@@ -13,11 +14,16 @@ hotkeys:
     _#k: runApp("Telegram")                     # command k, built in method
     home:
         currentAppTerminal(): sendKeys("control-a")     # only inside Terminal
-    _!*: switchKeyboardLayout("com.apple.keylayout.US", "com.apple.keylayout.Russian")
+    ^!#\: displayActiveWindowInfo()             # what is this app called?
+    _!*: switchKeyboardLayout("com.apple.keylayout.US", "com.apple.keylayout.Spanish")
 ```
 
 The last line has no key in it at all. Option and Shift pressed together and released switches the
-input source, the way Alt and Shift do on Windows.
+input source, the way Alt and Shift do on Windows. Any two layouts you have enabled work there.
+
+The line above it answers the question every config starts with. Press control option command
+backslash in any app and Hotkeys tells you its bundle id, process name and window title, which is
+exactly what contexts match on.
 
 ## Install
 

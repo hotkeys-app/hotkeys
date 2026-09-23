@@ -14,8 +14,8 @@ hotkeys:
     _#f10: reloadConfig()
 
     # press this inside any app to learn its bundle id, process name and window title,
-    # the three things contexts match on
-    ^!#i: displayActiveWindowInfo()
+    # the three things contexts match on. Control option command backslash, free on every Mac
+    ^!#\: displayActiveWindowInfo()
 
     # a string that is not a method call goes to your login shell, so PATH, brew,
     # virtualenvs and your aliases are all there

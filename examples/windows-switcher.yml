@@ -3,9 +3,9 @@
 
 hotkeys:
     # Option and Shift pressed together and released, no other key, switches the input
-    # source the way Alt and Shift do on Windows. Bind the line below first and press it
-    # to read the ids of your own layouts.
-    _!*: switchKeyboardLayout("com.apple.keylayout.US", "com.apple.keylayout.Russian")
+    # source the way Alt and Shift do on Windows. Any two input sources you have enabled
+    # work here, bind the line below first and press it to read their ids.
+    _!*: switchKeyboardLayout("com.apple.keylayout.US", "com.apple.keylayout.Spanish")
     ^!#l: displayAvailableKeyboardInputSources()
 
     # f5 reloads the page, as in every browser on Windows
