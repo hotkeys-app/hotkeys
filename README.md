@@ -91,8 +91,8 @@ alternatives.
 
 ## Price
 
-Ten hotkeys are free with no time limit. A license unlocks the rest on three Macs: 9 USD a year or
-15 USD once. Contexts and most built in methods need the license, shell commands and AppleScript do not.
+Ten hotkeys are free with no time limit, contexts and every built in method included. A license
+unlocks the rest on three Macs: 9 USD a year or 15 USD once.
 
 ## Privacy
 

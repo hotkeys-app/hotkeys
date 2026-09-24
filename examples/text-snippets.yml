@@ -1,4 +1,4 @@
-# Type the things you type all day. Nothing here needs a license, it is all shell.
+# Type the things you type all day, it is all shell.
 #
 # The keystroke calls go through System Events, which uses the Accessibility permission
 # Hotkeys already has.

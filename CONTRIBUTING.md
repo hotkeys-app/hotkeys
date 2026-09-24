@@ -9,7 +9,7 @@ it will be added for you.
 
 What makes a good example:
 
-- A header comment saying what it does, what it needs (a license, Screen Recording), and which app
+- A header comment saying what it does, what it needs (Screen Recording, a command line tool), and which app
   version it was tested against if that matters.
 - Comments on the lines that are not obvious, especially which key a `sendKeys` call is imitating.
 - No personal paths, no tokens, no internal URLs. `~/bin/script.sh` and `/Users/you/Projects/App`

@@ -1,7 +1,7 @@
 # Windows and Linux muscle memory inside Terminal. Home, End and the word jumps do what
 # they do everywhere else, by translating them into the readline keys the shell listens for.
 #
-# Needs a license (contexts). For iTerm2 swap currentAppTerminal() for
+# For iTerm2 swap currentAppTerminal() for
 # currentApp("com.googlecode.iterm2"), for Ghostty currentApp("com.mitchellh.ghostty").
 
 hotkeys:

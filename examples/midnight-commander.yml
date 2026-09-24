@@ -1,5 +1,5 @@
 # Midnight Commander runs inside a terminal window, so the thing to match on is the window
-# title, not the app. Reading titles needs the Screen Recording permission, and a license.
+# title, not the app. Reading titles needs the Screen Recording permission.
 #
 # The title differs per terminal. Bind displayActiveWindowInfo() to a key, press it with mc
 # in front, and copy the part of the title that is always there into currentWindowContains.

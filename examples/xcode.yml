@@ -1,5 +1,5 @@
 # Xcode with the editing keys of every other editor, plus the project files you open all
-# day on single keys. Needs a license.
+# day on single keys.
 
 macros:
     XCODE: currentApp("com.apple.dt.Xcode")

@@ -1,7 +1,7 @@
 # One key, one app. The cheapest hotkey there is, and the one you press most.
 #
 # runApp brings the app to the front when it is already running and launches it when it is
-# not. It takes the name with or without .app. It needs a license, the open lines below do not.
+# not. It takes the name with or without .app, the open lines below are the shell way.
 
 hotkeys:
     _#l: runApp("Telegram")
@@ -12,7 +12,7 @@ hotkeys:
     ^!#a: runApp("Activity Monitor")
     ^#o: runApp("System Settings")
 
-    # the shell does the same without a license
+    # the shell does the same
     _#t: open -a Terminal
     _#f: open -a "Google Chrome"
 

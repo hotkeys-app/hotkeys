@@ -1,5 +1,4 @@
 # Coming from Windows. The keys that are missing on macOS or sit somewhere else.
-# Needs a license, except the screencapture line.
 
 hotkeys:
     # Option and Shift pressed together and released, no other key, switches the input

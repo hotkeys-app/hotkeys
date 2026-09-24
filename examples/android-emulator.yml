@@ -1,7 +1,7 @@
 # Hardware keys for the Android emulator and for devices mirrored with scrcpy.
 # Escape is Back, the key left of 1 is Home, f2 is Recents, the same keys for both.
 #
-# Needs a license. The emulator context reads the window title, which needs the Screen
+# The emulator context reads the window title, which needs the Screen
 # Recording permission. adb -e talks to the emulator, adb -d to the usb device.
 
 macros:

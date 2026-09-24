@@ -1,5 +1,4 @@
-# Start here. Everything in this file runs without a license, it is all shell commands,
-# AppleScript and the four free methods.
+# Start here. Shell commands, AppleScript and a few built in methods, the basics of a config.
 #
 # Copy the lines under hotkeys: into your own config (menu bar icon, Edit Config), save,
 # then Reload Config. Modifiers are ^ ctrl, ! option, * shift, # command. A name starting

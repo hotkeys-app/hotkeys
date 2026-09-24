@@ -1,7 +1,7 @@
 # iPhone Mirroring and the iOS Simulator, driven from the keyboard.
 #
 # openMenuItem clicks the real menu item by name, so it keeps working when Apple changes
-# the shortcut behind it. Needs a license.
+# the shortcut behind it.
 
 macros:
     MIRROR: currentProcessEquals("iPhone Mirroring")
